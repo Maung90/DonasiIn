@@ -1,0 +1,141 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Poppins&family=Quicksand&family=Roboto+Mono&display=swap');
+/*
+font-family: 'Quicksand', sans-serif;
+font-family: 'Roboto Mono', monospace;
+*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-family: 'Poppins', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+body{
+	background-color: #F2F2F2;
+}
+.logo{
+	font-family: 'Roboto Mono', monospace;
+}
+.navbar{
+	align-items: center;
+	flex-wrap: nowrap;
+} 
+.link{
+	display: inline-flex;
+	margin-right: 10%;
+	margin-top: 15px;
+} 
+.link a{
+	padding: 15px;
+	font-size: 15px;
+	color: #262323;
+	margin: 5px 1vw ;
+	text-decoration: none;
+}
+.link a:hover{
+color: #254418;
+border-bottom: 3px solid #254418;
+}
+.active{
+	color: #254418;
+	border-bottom: 3px solid #254418;
+}
+
+.navbar-custom{
+	background-color: transparent;
+	position: sticky;
+	top: 0;
+
+}
+.container-custom{
+	background-color: #5DAA2A;
+	padding: 15px;
+	height: 100vh;
+	width: 100%;
+}
+.paragraph{
+	width: 50%;
+}
+.img{
+	border-radius: 10px; 
+	height: 85vh;
+	width: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url('donasi.png'); 
+}
+.paragraph h1{
+	font-weight: bold;
+	margin: 100px 100px 0 100px;
+	font-family: 'Itim', cursive;
+}
+.paragraph p{
+	width: 70%;
+	margin-left:100px;
+	margin-top:10px;
+}
+.paragraph a{ 
+	padding: 10px;
+}
+.paragraph  .button1{
+	background-color: #27E519; 
+	color: white;
+	margin-left: 100px; 
+	border-radius: 5px;
+}
+.paragraph  .button2{
+	color: #E9E9E9;
+	margin-left: 20px; 
+	border-radius: 5px;
+}
+.paragraph  .button2:hover{
+	transition: 0.2s;
+	color: #27E519;
+	background-color: #E9E7E7;
+}
+.paragraph .box{
+	margin-top: 25px;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.paragraph h5{
+	display: block;
+	margin-top: 30px;
+/*	font-size: 25px;*/
+}
+.paragraph .box1,.box2,.box3,.box4{
+	display: flex; 
+	align-items: center;
+	display: inline-block;
+	margin-left: 10px ;
+	width: 140px;
+	height: 100px;
+}
+.paragraph .box1 i,.box2 i,.box3 i,.box4 i{
+	margin-top: 15px;
+	font-size: 30px;
+}
+.paragraph .box .box1{
+	background-color: salmon;
+	color: white;
+	border-radius: 3px;
+}
+.paragraph .box .box2{
+	background-color: #4E52F1;
+	color: white;
+	border-radius: 3px;
+}
+.paragraph .box .box3{
+	background-color: #EC9D14;
+	color: white;
+	border-radius: 3px;
+}
+.paragraph .box .box4{
+	background-color: #7F2CAA;
+	color: white;
+	border-radius: 3px;
+}
