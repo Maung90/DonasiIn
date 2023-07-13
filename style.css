@@ -16,6 +16,21 @@ a{
 body{
 	background-color: #F2F2F2;
 }
+.bg{
+	content: " ";
+	background-color: rgba(255, 255, 255, 0.4);
+	backdrop-filter: blur(5px);
+	opacity: .8;
+	position: fixed;
+	top: 0;
+	height: 10vh;
+	width: 100vw;
+}
+.navbar-custom{
+	background-color: transparent;
+	position: sticky;
+	top: 0; 
+}
 .logo{
 	font-family: 'Roboto Mono', monospace;
 }
@@ -28,30 +43,34 @@ body{
 	margin-right: 5%;
 	margin-top: 15px;
 } 
-.link a{
+.link .link-item{
 	padding: 15px;
 	font-size: 15px;
 	color: #262323;
 	margin: 5px 1vw ;
 	text-decoration: none;
 }
-.link a:hover{
-color: #254418;
-border-bottom: 3px solid #254418;
+.link .link-item:hover{
+	color: #254418;
+	border-bottom: 3px solid #254418;
 }
 .active{
 	color: #254418;
 	border-bottom: 3px solid #254418;
 }
-
-.navbar-custom{
-	background-color: ghostwhite;
-	position: sticky;
-	top: 0;
-
+.link .btn-galang{
+	background-color: #51D060; 
+	font-weight: bold;
+	color: white;
+	border-radius: 50px;
+	padding: 7px;
 }
-.container-custom{
-/*	background-color: #5DAA2A;*/
+
+
+
+
+
+.container-custom{ 
 	background-color: #F4F4F4;
 	padding: 15px;
 	height: 100vh;
@@ -59,6 +78,7 @@ border-bottom: 3px solid #254418;
 }
 .paragraph{
 	width: 50%;
+	margin-left: 5% ;
 }
 .img{
 	margin-right: 5%;
@@ -71,12 +91,10 @@ border-bottom: 3px solid #254418;
 }
 .paragraph h1{
 	font-weight: bold;
-	margin: 100px 100px 0 100px;
-	font-family: 'Itim', cursive;
+	margin: 100px 100px 0 0; 
 }
 .paragraph p{
 	width: 70%;
-	margin-left:100px;
 	margin-top:10px;
 	font-style: italic;
 }
@@ -84,9 +102,8 @@ border-bottom: 3px solid #254418;
 	padding: 10px;
 }
 .paragraph  .button1{
-	background-color: #27E519; 
+	background-color: #51D060; 
 	color: white;
-	margin-left: 100px; 
 	border-radius: 5px;
 }
 .paragraph  .button2{
@@ -96,11 +113,11 @@ border-bottom: 3px solid #254418;
 }
 .paragraph  .button2:hover{
 	transition: 0.2s;
-	color: #27E519;
-	background-color: #E9E7E7;
+	color: #254418;
+	background-color: #51D060;
 }
 .paragraph .box-dana{
-	margin: 25px 0 25px 80px ;
+	margin: 25px 0 25px 0 ;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -114,49 +131,94 @@ border-bottom: 3px solid #254418;
 
 .paragraph .box-dana p b{
 	font-size: 16px;
-	}
+}
 
-/*
-.paragraph .box{
-	margin-top: 25px;
+
+/* kategori */
+.container-kategori{
+	margin: auto;
+	width: 90%;
+	height: 48vh; 
+	background-color: #FBF9F9;
+	padding: 45px; 
+	border-radius: 10px;
+}
+.container-kategori h3{
+	font-size: 33px;
+	font-weight: bolder;
+}
+.container-kategori h5{ 
+	font-size: 23px;
+
+}
+
+.container-kategori .box-kategori{ 
+	margin: 15px auto;
 	display: flex;
-	justify-content: center;
-	width: 100%;
+	width: 90%; 
 }
-.paragraph h5{
-	display: block;
-	margin-top: 30px; 
-}
-.paragraph .box1,.box2,.box3,.box4{
-	display: flex; 
-	align-items: center;
-	display: inline-block;
-	margin-left: 10px ;
+.container-kategori .box { 
+	padding: 10px;  
 	width: 140px;
 	height: 100px;
 }
-.paragraph .box1 i,.box2 i,.box3 i,.box4 i{
-	margin-top: 15px;
+.container-kategori .box a {  
+	color: #1B1B1B;
+	font-weight: bold;
+}
+
+.container-kategori .box-kategori i{
+	color: white; 
+	background-color: #51D060;
 	font-size: 30px;
+	padding:30px;
+	border-radius: 50%;
+	margin-bottom: 5px;
 }
-.paragraph .box .box1{
-	background-color: salmon;
-	color: white;
-	border-radius: 3px;
+.container-kategori .box a:hover {  
+	color: #1B0FB3;
 }
-.paragraph .box .box2{
-	background-color: #4E52F1;
-	color: white;
-	border-radius: 3px;
+
+/* footer  */
+.footer{ 
+	width: 100%; 
+	background-color: #46F38B;
+	margin-bottom: 0;
+	padding: 10px;
+} 
+.footer a{
+	color: #1B1B1B;
 }
-.paragraph .box .box3{
-	background-color: #EC9D14;
-	color: white;
-	border-radius: 3px;
+.footer .box-1 {
+	width: 40%;
+	margin: 5%; 
 }
-.paragraph .box .box4{
-	background-color: #7F2CAA;
-	color: white;
-	border-radius: 3px;
+.footer	.box-1 li a i{ 
+	padding: 6px; 
+	margin: 0 5px;
 }
-*/
+.footer .box-2{
+	text-align: right;
+	width: 40%;
+	margin: 5% 15% 0 0; 
+}
+
+
+.footer .copyright{
+	margin-left: 7%;
+}
+.footer	.box-1 li a .fa-whatsapp:hover{ 
+	background-color: white;
+	border-radius: 50%;
+	color: #51D060;
+}
+.footer	.box-1 li a .fa-facebook-f:hover{ 
+	background-color: white;
+	border-radius: 30%;
+	color: #0825FE;
+}
+.footer	.box-1 li a .fa-twitter:hover{ 
+	background-color: white;
+	border-radius: 50%;
+	color: #0825FE;
+}
