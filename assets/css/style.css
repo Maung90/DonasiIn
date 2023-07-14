@@ -284,6 +284,71 @@ body{
 	color: #fff;
 }
 
+/* album */
+.container-album {
+	width: 100%;
+	margin-top: 3rem;
+	justify-content: center;
+}
+
+.container-album .title{
+	font-size: 33px;
+}
+
+.container-album .text{
+	font-size: 14px;
+	font-style: italic;
+}
+
+.album .carousel-album {
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.album{
+	margin: auto;
+	max-width: 1200px;
+}
+
+.album .carousel-album img{
+	cursor: pointer;
+	height: 344px;
+	object-fit: cover;
+	width: calc(100%/3);
+}
+
+/* popalbum */
+.popup-album{
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.6);
+/*	padding: 15px;*/
+/*	z-index: 2;*/
+/*	max-width: 1200px;*/
+}
+
+.popup-album img{
+/*	height: auto;*/
+	width: 75%;
+/*	object-fit: cover;*/
+}
+
+.popup-album i{
+	position: absolute;
+	color: #fff;
+	font-size: 3rem;
+	top: 10px;
+	right: 20px;
+}
+
 /* footer  */
 .footer{ 
 	width: 100%; 
