@@ -131,7 +131,7 @@ body{
 	background-color: #F6CD0D;
 	border-radius: 10px;
 	height: 10px;
-	width: 20%;
+	
 }
 .card-custom .text{
 	margin-bottom: 35px;
@@ -155,3 +155,12 @@ body{
 .card-custom .button:hover{
 	color: black;
 }
+#card-kesehatan .card-custom .container-bar .bar{
+background-color: royalblue;
+	}
+#card-hewan .card-custom .container-bar .bar{
+background-color: green;
+	}
+#card-bencana .card-custom .container-bar .bar{
+background-color: orangered;
+	}

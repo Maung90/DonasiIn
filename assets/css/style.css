@@ -15,6 +15,7 @@ a{
 }
 body{
 	background-color: #F2F2F2;
+	overflow-x: hidden;
 }
 .bg{
 	content: " ";
@@ -137,8 +138,7 @@ body{
 	margin-top: 3rem; 
 	justify-content: center;
 }
-.img-2{
-/*	margin-top: -3%;*/
+.img-2{ 
 	margin-right: 5%;
 	border-radius: 10px; 
 	height: 35vh;
@@ -283,6 +283,104 @@ body{
 	font-size: 10rem;
 	color: #fff;
 }
+
+
+
+
+
+/* Donasi */
+.container-donasi{
+	margin: 5% 0;
+	width: 100vw;
+}
+.container-donasi .row{
+	margin: auto;
+	overflow-x: scroll ;
+	overflow-y: hidden ;
+	display:flex; 
+	flex-wrap: nowrap; 
+	align-items: center;
+	height: 85vh;
+	width: 100vw;
+}
+
+.card-custom{ 
+	width: 300px;
+	background-color: white;
+	padding-top: 10px;
+	height: 500px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); 
+}
+.card-custom:hover{
+	transition: 0.5s;
+	margin-top: -5px;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+.card-custom h5{
+	font-size: 15px;
+	font-weight: bold;
+}
+.card-custom .badge-custom{
+	border-radius: 10px;
+	color: whitesmoke;
+	height: 20px;
+	width: 75px;
+/*	padding:0 6px ;*/
+	font-size: 12px;
+}
+.card-custom .container-bar{
+	margin:auto;
+	background-color: #AEACAC;
+	border-radius: 10px;
+	height: 10px;
+	width: 90%;
+}
+.card-custom .container-bar .bar{
+	background-color: #F6CD0D;
+	border-radius: 10px;
+	height: 10px;
+	
+}
+.card-custom .text{
+	margin-bottom: 35px;
+	margin-left: 10px;
+	font-size: 11px;
+}
+.card-custom .text i{
+	color: #AC8E03;
+}
+.card-custom .button{
+	cursor: pointer;
+	margin: 0 auto;
+	width: 90%; 	
+	text-align: center;
+	background-color: #5873F9;
+	padding: 5px;
+	color: white;
+	border-radius: 5px; 
+}
+
+.card-custom .button:hover{
+	color: black;
+}
+#card-kesehatan .card-custom .container-bar .bar{
+background-color: royalblue;
+	}
+#card-hewan .card-custom .container-bar .bar{
+background-color: green;
+	}
+#card-bencana .card-custom .container-bar .bar{
+background-color: orangered;
+	}
+
+
+
+
+
+
+
+
 
 /* footer  */
 .footer{ 
