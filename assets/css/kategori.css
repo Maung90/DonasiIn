@@ -113,7 +113,7 @@ body{
 	font-weight: bold;
 }
 .card-custom .badge-custom{
-	border-radius: 10px;
+	border-radius: 5px;
 	color: whitesmoke;
 	height: 20px;
 	width: 75px;
@@ -164,3 +164,39 @@ background-color: green;
 #card-bencana .card-custom .container-bar .bar{
 background-color: orangered;
 	}
+
+/*	Modal */
+
+.box-link	a{
+	cursor: pointer;
+	margin: auto;
+	text-align: center;
+	font-size: 1.2rem;
+	display: flex;
+	width: 70%; 
+	color: black;
+	background-color: #F9F9F9;
+	border-radius: 5px;
+	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.box-link	a:hover{ 
+	transition: 0.4s;
+	box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+}
+
+.box-link	a i.fa-laugh-beam{
+color: #F1D100;
+	}
+
+.box-link	a i.fa-face-laugh-wink{
+color: #44C305;
+	}
+
+.box-link	a i.fa-face-laugh-squint{
+color: orangered;
+	}
+
+.box-link	a i.fa-face-grin-hearts{
+color: hotpink;
+	} 
