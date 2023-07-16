@@ -17,6 +17,10 @@ body{
 	background-color: #F2F2F2;
 	overflow-x: hidden;
 }
+
+ol, ul {
+	padding-left: 0;
+}
 .bg{
 	content: " ";
 	background-color: rgba(255, 255, 255, 0.4);
@@ -64,7 +68,7 @@ body{
 	font-weight: bold;
 	color: white;
 	border-radius: 50px;
-	padding: 7px;
+	padding: 10px;
 }
 
 .container-custom{ 
@@ -283,10 +287,6 @@ body{
 	font-size: 10rem;
 	color: #fff;
 }
- 
-
-
-
 
 /* Donasi */
 .container-donasi{
@@ -373,14 +373,6 @@ background-color: green;
 #card-bencana .card-custom .container-bar .bar{
 background-color: orangered;
 	}
-
-
-
-
-
-
-
- 
 /* album */
 .container-album {
 	width: 100%;
@@ -409,7 +401,7 @@ background-color: orangered;
 	width: calc(100%/4);
 	padding: 7px;
 	overflow: hidden;
-	max-height: 244px;
+	max-height: 250px;
 }
 
 .album .image span {
@@ -420,9 +412,8 @@ background-color: orangered;
 
 .album .image img{
 	width: 100%;
-	height: 100%;
-	vertical-align: middle;
-	transition: all 0.3 ease;
+	height: 344px;
+	transition: all 0.3s ease;
 	object-fit: cover;
 }
 
@@ -443,15 +434,11 @@ background-color: orangered;
 	margin: auto;
 	justify-content: center;
 	background-color: rgba(0, 0, 0, 0.6);
-/*	padding: 15px;*/
-/*	z-index: 2;*/
-/*	max-width: 1200px;*/
 }
 
 .popup-album img{
-/*	height: auto;*/
 	width: 75%;
-/*	object-fit: cover;*/
+	object-fit: cover;
 }
 
 .popup-album i{
@@ -464,26 +451,25 @@ background-color: orangered;
 
 /* footer  */
 .footer{ 
-	width: 100%; 
 	background-color: #46F38B;
-	margin-bottom: 0;
-	padding: 10px;
+	padding-top: 40px;
+	padding-bottom: 10px;
 } 
 .footer a{
 	color: #1B1B1B;
 }
 .footer .box-1 {
-	width: 40%;
-	margin: 5%; 
+/*	text-align: left;*/
+/*	width: 40%;*/
+	margin-left: 5%; 
 }
 .footer	.box-1 li a i{ 
-	padding: 6px; 
-	margin: 0 5px;
+	padding: 6px;
 }
 .footer .box-2{
 	text-align: right;
 	width: 40%;
-	margin: 5% 15% 0 0; 
+	margin-right: 5%;
 }
 .footer	.box-2 li a:hover{
 	color: white;
@@ -491,8 +477,15 @@ background-color: orangered;
 
 
 .footer .copyright{
-	margin-left: 7%;
+	display: flex;
+	justify-content: center;
+	margin-left: 5%;
 }
+
+.footer	.box-1 li a:hover{ 
+	color: #fff;
+}
+
 .footer	.box-1 li a .fa-whatsapp:hover{ 
 	background-color: white;
 	border-radius: 50%;
