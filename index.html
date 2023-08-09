@@ -9,11 +9,18 @@
 	<link rel="stylesheet" href="assets/css/style.css"> 
 </head>
 <body>
-	<div class="bg"></div>
-	<div class="navbar navbar-custom shadow d-flex justify-content-between" style="height: 10vh;">
+	<div class="navbar-mobile shadow ">
 		<div class="logo" style="font-size:25px;margin-left: 5%;color:#254418;font-weight:600;" >
 			<i class="fa-solid fa-hands-holding-child"> 	</i>
 			DonasiIn
+		</div>
+		<label class="fa fa-bars" id="btn-open"></label>
+	</div>
+	<div class="navbar-custom shadow">
+		<div class="logo"  >
+			<i class="fa-solid fa-hands-holding-child"> </i>
+			<span>DonasiIn</span>
+			<i class="fa fa-close" id="btn-close"></i>
 		</div>
 		<ul class="link" style="list-style-type: none;">
 			<li>
@@ -36,6 +43,7 @@
 			</li>
 		</ul>
 	</div>
+
 	<div class="container-custom">
 		<div class="d-flex justify-content-between">
 			<div class="paragraph">
@@ -44,203 +52,235 @@
 				</h1>
 				<p>
 					Dengan website Donasiin, kegiatan donasi menjadi lebih mudah, transparan, dan terpercaya.
-				<div class="box-dana">
-					<p align="center"> <b>Rp.497Jt++</b><br>Dana Terkumpul </p>
-					<p align="center"> <b> 369Jt++</b><br>Orang Terbantu </p>
+					<div class="box-dana">
+						<p align="center"> <b>Rp.497Jt++</b><br>Dana Terkumpul </p>
+						<p align="center"> <b> 369Jt++</b><br>Orang Terbantu </p>
+					</div>
+
+					<a href="kategori.html" class="button1">
+						Donasi Sekarang
+					</a>
+					<a href="#contact" class="button2">
+						Hubungi Kami
+					</a>
+				</div> 
+				<div class="img">
 				</div>
 
-				<a href="kategori.html" class="button1">
-					Donasi Sekarang
-				</a>
-				<a href="#contact" class="button2">
-					Hubungi Kami
-				</a>
+			</div>
+		</div>
+		<div class="container-kategori shadow">
+			<h3>
+				AyoBantu mereka yang membutuhkan
+			</h3>		
+			<h5>
+				Pilih kategori favorit kamu
+			</h5>
+			<div class="box-kategori justify-content-between">
+				<div class="box text-center">
+					<a href="kategori.html">
+						<i class="fa-solid fa-volcano"></i><br>
+						Bencana
+					</a>
+				</div>
+				<div class="box text-center">
+					<a href="kategori.html">
+						<i class="fa-solid fa-shield-dog"></i><br>
+						Hewan
+					</a>
+				</div>
+				<div class="box text-center">
+					<a href="kategori.html">
+						<i class="fa-solid fa-stethoscope"></i><br>
+						Kesehatan
+					</a>
+				</div>
+				<div class="box text-center">
+					<a href="kategori.html">
+						<i class="fa-solid fa-users"></i><br>
+						Sosial
+					</a>
+				</div>
+				<div class="box text-center">
+					<a href="kategori.html">
+						<i class="fa-solid fa-table-cells-large"></i><br>
+						Lainnya
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-about" id="about">
+			<div class="logo">
+				<div class="about-logo">
+					<i class="fa-solid fa-hands-holding-child"  style="font-size:4rem"></i>
+				</div>
+				<div class="about-title">
+					<h3 style="color: #254418;">About</h3>
+				</div>
+				<div class="about-body">
+					<div class="d-flex justify-content-center">
+						<div class="img-2"></div>
+						<div class="col-6 text-white" style="text-align: justify;">
+							<span style="color: #254418;">Website Donasiin adalah platform digital yang didedikasikan untuk mendukung kegiatan donasi dan gerakan sosial. Website ini menyediakan tempat bagi individu, kelompok, dan organisasi untuk berpartisipasi dalam kegiatan filantropi dan memberikan kontribusi positif kepada masyarakat. Di Website Donasiin, proses donasi menjadi lebih mudah dan transparan. Para donatur dapat memilih proyek yang ingin mereka dukung, menentukan jumlah donasi yang ingin mereka berikan, dan melakukan pembayaran melalui platform yang aman dan terpercaya. Selain itu, Website Donasiin juga menyediakan opsi untuk berdonasi secara reguler atau sekali saja, memberikan fleksibilitas kepada para donatur sesuai dengan preferensi dan kemampuan mereka.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-donasi p-3 shadow bg-white">
+			<h3 style="margin-left: 4vw;font-weight: bolder;">
+				Donasi Mendesak Minggu Ini
+			</h3>
+			<div class="row">
+				<div class="col-3 " id="card-kesehatan" >
+					<div class="card-custom">
+						<center>
+							<img class="rounded" src="https://img.kitabisa.cc/size/1000/f22c1a91-049a-495d-a21c-133ee2b42c36.jpg" alt="Bantu Melawan Penyakit Otak" width="280px" height="280px">
+						</center>
+						<div class="d-flex justify-content-between m-3"> 
+							<h5> 
+								Bantu Melawan Penyakit Otak 
+							</h5>
+							<label class="badge-custom text-center" style="background-color: royalblue;">kesehatan</label>
+						</div> 
+						<div class="container-bar">
+							<div class="bar" style="width: 10%;">
+
+							</div>
+						</div>
+						<p class="text"><i>Rp 1.600.000 </i>terkumpul dari Rp 50.000.000 </p>
+						<div class="button">Donasi</div>
+					</div>
+				</div>
+				<div class="col-3 " id="card-hewan">
+					<div class="card-custom">
+						<center>
+							<img class="rounded" src="https://assets.petpintar.com/cache/720/720/article/787/1668168008-donasi-untuk-anjing-banner.jpg" alt="Donasi untuk hewan Sakit dan Terlantar" width="280px" height="280px">
+						</center>
+						<div class="d-flex justify-content-between m-3">
+							<h5>
+								Donasi untuk hewan Sakit dan Terlantar
+							</h5>
+							<label class="badge-custom text-center"style="background-color: green;">Hewan</label>
+						</div> 
+						<div class="container-bar">
+							<div class="bar" style="width: 43%;">
+
+							</div>
+						</div>
+						<p class="text"><i>Rp 8.000.000 </i>terkumpul dari Rp 20.000.000 </p>
+						<div class="button">Donasi</div>
+					</div>
+				</div>
+				<div class="col-3 " id="card-sosial">
+					<div class="card-custom">
+						<center>
+							<img class="rounded" src="https://asset.ayobantu.com/campaign/I5JySIYVqt_1683256476.jpg" alt="Hunian layak untuk dhuafa" width="280px" height="280px">
+						</center>
+						<div class="d-flex justify-content-between m-3">
+							<h5>
+								Hunian layak untuk dhuafa
+							</h5>
+							<label class="badge-custom text-center" style="background-color: orange;">Sosial</label>
+						</div> 
+						<div class="container-bar">
+							<div class="bar" style="width:87%;">
+
+							</div>
+						</div>
+						<p class="text"><i>Rp 43.000.000 </i>terkumpul dari Rp 50.000.000 </p>
+						<div class="button">Donasi</div>
+					</div>
+				</div>
+				<div class="col-3 " id="card-bencana">
+					<div class="card-custom">
+						<center>
+							<img class="rounded" src="https://www.benarnews.org/indonesian/berita/korban-bencana-04302019150338.html/190430_ID_Disaster_1000.jpg/@@images/e17e219d-4585-496f-865b-626590efc682.jpeg" alt="Bantu Mereka Korban Banjir Di Cianjur" width="280px" height="280px">
+						</center>
+						<div class="d-flex justify-content-between m-3">
+							<h5>
+								Bantu Mereka Korban Banjir Di Cianjur
+							</h5>
+							<label class="badge-custom text-center" style="background-color: darkred;">Bencana</label>
+						</div> 
+						<div class="container-bar">
+							<div class="bar" style="width:55%;">
+
+							</div>
+						</div>
+						<p class="text"><i>Rp 26.000.000 </i>terkumpul dari Rp 50.000.000 </p>
+						<div class="button">Donasi</div>
+					</div>
+				</div> 
+				<div class="col-3 " id="card-sosial">
+					<div class="card-custom">
+						<center>
+							<img class="rounded" src="https://1.bp.blogspot.com/-RDKLTIYCjnA/YNw6wimx3nI/AAAAAAAAhC8/gwyH8Rp4hNMqxez221BSiuJXNSE7h7f5gCLcBGAsYHQ/s621/df1a64a0-3dd6-447e-88f7-88dcbf174baf.jpg" alt="Bersama Polri Berdonasi" width="280px" height="280px">
+						</center>
+						<div class="d-flex justify-content-between m-3">
+							<h5>
+								Bersama Polri Berdonasi
+							</h5>
+							<label class="badge-custom text-center" style="background-color: orange;">Sosial</label>
+						</div> 
+						<div class="container-bar">
+							<div class="bar" style="width: 100%;">
+
+							</div>
+						</div>
+						<p class="text"><i>Rp 5.600.000 </i>terkumpul dari Tak terbatas </p>
+						<div class="button">Donasi</div>
+					</div>
+				</div>
 			</div> 
-			<div class="img">
-			</div>
-
-		</div>
-	</div>
-	<div class="container-kategori shadow">
-		<h3>
-			AyoBantu mereka yang membutuhkan
-		</h3>		
-		<h5>
-			Pilih kategori favorit kamu
-		</h5>
-		<div class="box-kategori justify-content-between">
-			<div class="box text-center">
-				<a href="kategori.html">
-					<i class="fa-solid fa-volcano"></i><br>
-					Bencana
-				</a>
-			</div>
-			<div class="box text-center">
-				<a href="kategori.html">
-					<i class="fa-solid fa-shield-dog"></i><br>
-					Hewan
-				</a>
-			</div>
-			<div class="box text-center">
-				<a href="kategori.html">
-					<i class="fa-solid fa-stethoscope"></i><br>
-					Kesehatan
-				</a>
-			</div>
-			<div class="box text-center">
-				<a href="kategori.html">
-					<i class="fa-solid fa-users"></i><br>
-					Sosial
-				</a>
-			</div>
-			<div class="box text-center">
-				<a href="kategori.html">
-					<i class="fa-solid fa-table-cells-large"></i><br>
-					Lainnya
-				</a>
-			</div>
-		</div>
-	</div>
-
-	<div class="container-about" id="about">
-		<div class="logo">
-			<div class="about-logo">
-				<i class="fa-solid fa-hands-holding-child"  style="font-size:4rem"></i>
-			</div>
-			<div class="about-title">
-				<h3 style="color: #254418;">About</h3>
-			</div>
-			<div class="about-body">
-				<div class="d-flex justify-content-center">
-					<div class="img-2"></div>
-					<div class="col-6 text-white" style="text-align: justify;">
-						<span style="color: #254418;">Website Donasiin adalah platform digital yang didedikasikan untuk mendukung kegiatan donasi dan gerakan sosial. Website ini menyediakan tempat bagi individu, kelompok, dan organisasi untuk berpartisipasi dalam kegiatan filantropi dan memberikan kontribusi positif kepada masyarakat. Di Website Donasiin, proses donasi menjadi lebih mudah dan transparan. Para donatur dapat memilih proyek yang ingin mereka dukung, menentukan jumlah donasi yang ingin mereka berikan, dan melakukan pembayaran melalui platform yang aman dan terpercaya. Selain itu, Website Donasiin juga menyediakan opsi untuk berdonasi secara reguler atau sekali saja, memberikan fleksibilitas kepada para donatur sesuai dengan preferensi dan kemampuan mereka.</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
- 
-	<div class="container-donasi p-3 shadow bg-white">
-		<h3 style="margin-left: 4vw;font-weight: bolder;">
-			Donasi Mendesak Minggu Ini
-		</h3>
-		<div class="row">
-			<div class="col-3 " id="card-kesehatan" >
-				<div class="card-custom">
-					<center>
-						<img class="rounded" src="https://img.kitabisa.cc/size/1000/f22c1a91-049a-495d-a21c-133ee2b42c36.jpg" width="280px" height="280px">
-					</center>
-					<div class="d-flex justify-content-between m-3"> 
-						<h5> 
-							Bantu Melawan Penyakit Otak 
-						</h5>
-						<label class="badge-custom text-center" style="background-color: royalblue;">kesehatan</label>
-					</div> 
-					<div class="container-bar">
-						<div class="bar" style="width: 10%;">
-
-						</div>
-					</div>
-					<p class="text"><i>Rp 1.600.000 </i>terkumpul dari Rp 50.000.000 </p>
-					<div class="button">Donasi</div>
-				</div>
-			</div>
-			<div class="col-3 " id="card-hewan">
-				<div class="card-custom">
-					<center>
-						<img class="rounded" src="https://assets.petpintar.com/cache/720/720/article/787/1668168008-donasi-untuk-anjing-banner.jpg" width="280px" height="280px">
-					</center>
-					<div class="d-flex justify-content-between m-3">
-						<h5>
-							Donasi untuk hewan Sakit dan Terlantar
-						</h5>
-						<label class="badge-custom text-center"style="background-color: green;">Hewan</label>
-					</div> 
-					<div class="container-bar">
-						<div class="bar" style="width: 43%;">
-
-						</div>
-					</div>
-					<p class="text"><i>Rp 8.000.000 </i>terkumpul dari Rp 20.000.000 </p>
-					<div class="button">Donasi</div>
-				</div>
-			</div>
-			<div class="col-3 " id="card-sosial">
-				<div class="card-custom">
-					<center>
-						<img class="rounded" src="https://asset.ayobantu.com/campaign/I5JySIYVqt_1683256476.jpg" width="280px" height="280px">
-					</center>
-					<div class="d-flex justify-content-between m-3">
-						<h5>
-							Hunian layak untuk dhuafa
-						</h5>
-						<label class="badge-custom text-center" style="background-color: orange;">Sosial</label>
-					</div> 
-					<div class="container-bar">
-						<div class="bar" style="width:87%;">
-
-						</div>
-					</div>
-					<p class="text"><i>Rp 43.000.000 </i>terkumpul dari Rp 50.000.000 </p>
-					<div class="button">Donasi</div>
-				</div>
-			</div>
-			<div class="col-3 " id="card-bencana">
-				<div class="card-custom">
-					<center>
-						<img class="rounded" src="https://www.benarnews.org/indonesian/berita/korban-bencana-04302019150338.html/190430_ID_Disaster_1000.jpg/@@images/e17e219d-4585-496f-865b-626590efc682.jpeg" width="280px" height="280px">
-					</center>
-					<div class="d-flex justify-content-between m-3">
-						<h5>
-							Bantu Mereka Korban Banjir Di Cianjur
-						</h5>
-						<label class="badge-custom text-center" style="background-color: darkred;">Bencana</label>
-					</div> 
-					<div class="container-bar">
-						<div class="bar" style="width:55%;">
-
-						</div>
-					</div>
-					<p class="text"><i>Rp 26.000.000 </i>terkumpul dari Rp 50.000.000 </p>
-					<div class="button">Donasi</div>
-				</div>
-			</div> 
-			<div class="col-3 " id="card-sosial">
-				<div class="card-custom">
-					<center>
-						<img class="rounded" src="https://1.bp.blogspot.com/-RDKLTIYCjnA/YNw6wimx3nI/AAAAAAAAhC8/gwyH8Rp4hNMqxez221BSiuJXNSE7h7f5gCLcBGAsYHQ/s621/df1a64a0-3dd6-447e-88f7-88dcbf174baf.jpg" width="280px" height="280px">
-					</center>
-					<div class="d-flex justify-content-between m-3">
-						<h5>
-							Bersama Polri Berdonasi
-						</h5>
-						<label class="badge-custom text-center" style="background-color: orange;">Sosial</label>
-					</div> 
-					<div class="container-bar">
-						<div class="bar" style="width: 100%;">
-
-						</div>
-					</div>
-					<p class="text"><i>Rp 5.600.000 </i>terkumpul dari Tak terbatas </p>
-					<div class="button">Donasi</div>
-				</div>
-			</div>
 		</div> 
-	</div> 
-	<div class="container-album" style="padding-top: 72px;" id="album">
-		<h3 class="d-flex justify-content-center title">Album</h3>
-		<p class="d-flex justify-content-center text">"Satu tindakan kecil, satu perubahan besar. Bersama-sama, kita dapat memberikan dampak positif yang luar biasa."</p>
+		<div class="container-album" style="padding-top: 72px;" id="album">
+			<h3 class="d-flex justify-content-center title">Album</h3>
+			<p class="d-flex justify-content-center text">"Satu tindakan kecil, satu perubahan besar. Bersama-sama, kita dapat memberikan dampak positif yang luar biasa."</p>
 
-		<div class="album">
-				<div class="image"><span><img src="https://kalteng.kemenkumham.go.id/images/pbunbktsosialnew01.jpg"><span></div>
-				<div class="image"><span><img src="https://1.bp.blogspot.com/-RDKLTIYCjnA/YNw6wimx3nI/AAAAAAAAhC8/gwyH8Rp4hNMqxez221BSiuJXNSE7h7f5gCLcBGAsYHQ/s621/df1a64a0-3dd6-447e-88f7-88dcbf174baf.jpg"><span></div>
-				<div class="image"><span><img src="https://fin.co.id/upload/2fae560ddd80407f62309e396b918fa8.jpeg"><span></div>
-				<div class="image"><span><img src="https://kemensos.go.id/uploads/topics/16132797755546.jpeg"><span></div>
-				<div class="image"><span><img src="https://static.republika.co.id/uploads/images/inpicture_slide/yayasan-bangun-pemimpin-muda-masa-depan-salurkan-donasi-untuk_200524173552-354.jpg"><span></div>
-				<div class="image"><span><img src="https://awsimages.detik.net.id/community/media/visual/2022/12/18/anak-muda-bandung-saat-merawat-kucing-jalanan_43.jpeg?w=600&q=90"><span></div>
-				<div class="image"><span><img src="https://media.suara.com/pictures/970x544/2021/05/09/43707-donasi-untuk-korban-bencana-alam-di-ntt.jpg"><span></div>
-				<div class="image"><span><img src="https://i0.wp.com/spn.or.id/wp-content/uploads/2018/10/PSX_20181019_225446.jpg?resize=1280%2C640&ssl=1"><span></div>
+			<div class="album">
+				<div class="image">
+					<span>
+						<img src="https://kalteng.kemenkumham.go.id/images/pbunbktsosialnew01.jpg">
+					</span>
+				</div>
+				<div class="image">
+					<span>
+						<img src="https://1.bp.blogspot.com/-RDKLTIYCjnA/YNw6wimx3nI/AAAAAAAAhC8/gwyH8Rp4hNMqxez221BSiuJXNSE7h7f5gCLcBGAsYHQ/s621/df1a64a0-3dd6-447e-88f7-88dcbf174baf.jpg">
+					</span>
+				</div>
+				<div class="image">
+					<span>
+						<img src="https://fin.co.id/upload/2fae560ddd80407f62309e396b918fa8.jpeg">
+					</span>
+				</div>
+				<div class="image">
+					<span>
+						<img src="https://kemensos.go.id/uploads/topics/16132797755546.jpeg">
+					</span>
+				</div>
+				<div class="image">
+					<span>
+						<img src="https://static.republika.co.id/uploads/images/inpicture_slide/yayasan-bangun-pemimpin-muda-masa-depan-salurkan-donasi-untuk_200524173552-354.jpg">
+					</span>
+				</div>
+				<div class="image">
+					<span>
+						<img src="https://awsimages.detik.net.id/community/media/visual/2022/12/18/anak-muda-bandung-saat-merawat-kucing-jalanan_43.jpeg?w=600&q=90">
+					</span>
+				</div>
+				<div class="image">
+					<span>
+						<img src="https://media.suara.com/pictures/970x544/2021/05/09/43707-donasi-untuk-korban-bencana-alam-di-ntt.jpg">
+					</span>
+				</div>
+				<div class="image">
+					<span>
+						<img src="https://i0.wp.com/spn.or.id/wp-content/uploads/2018/10/PSX_20181019_225446.jpg?resize=1280%2C640&ssl=1">
+					</span>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -266,27 +306,49 @@
 					<h3>
 						Contact
 					</h3>
-					<a href="#"><i class="fa-brands fa-whatsapp"></i> Donasiin</a>
-					<a href="#"><i class="fa-brands fa-facebook-f"></i> Donasiin</a>
-					<a href="#"><i class="fa-brands fa-twitter"></i> Donasiin</a>
+					<a href="#">
+						<i class="fa-brands fa-whatsapp"></i> Donasiin
+					</a>
+					<a href="#">
+						<i class="fa-brands fa-facebook-f"></i> Donasiin
+					</a>
+					<a href="#">
+						<i class="fa-brands fa-twitter"></i> Donasiin
+					</a>
 				</li>
 			</ul>
 			<ul class="box-2"> 
-				<li><h3>Tentang</h3></li> 
-				<li><a href="#">AyoBantu</a></li>
-				<li><a href="#">Syarat & Ketentuan</a></li>
-				<li><a href="#">Hubungi Kami</a></li>
-				<li><a href="#">Partner Kami</a></li>
-				<li><a href="#">FAQ</a></li>
-				<li><a href="#">Blog</a></li>
+				<li>
+					<h3>Tentang</h3>
+				</li> 
+				<li>
+					<a href="#">AyoBantu</a>
+				</li>
+				<li>
+					<a href="#">Syarat & Ketentuan</a>
+				</li>
+				<li>
+					<a href="#">Hubungi Kami</a>
+				</li>
+				<li>
+					<a href="#">Partner Kami</a>
+				</li>
+				<li>
+					<a href="#">FAQ</a>
+				</li>
+				<li>
+					<a href="#">Blog</a>
+				</li>
 			</ul>
 		</div>
 		<p class="copyright">
 			&copy; Copyright Yayasan DonasiIn Indonesia 2023
 		</p> 
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-		<script src="assets/js/script-index.js"></script>
 
+
+<script src="assets/js/script-kategori.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+	<script src="assets/js/script-index.js"></script> 
 </body>
 </html>
