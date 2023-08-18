@@ -42,11 +42,17 @@ ol, ul {
 }
 .logo{
 	font-family: 'Roboto Mono', monospace;
+	/* margin-left: 5%; */
+	color:#254418;
+	font-weight:600;
+} 
+.logo-title{
+	font-family: 'Roboto Mono', monospace;
 	font-size:25px;
 	margin-left: 5%;
 	color:#254418;
 	font-weight:600;
-} 
+}
 .link{
 	display: inline-flex;
 	margin-right: 5%;
@@ -207,7 +213,7 @@ ol, ul {
 .container-kategori{
 	margin: auto;
 	width: 90%;
-	height: 48vh; 
+	/* height: 48vh;  */
 	background-color: #FBF9F9;
 	padding: 45px; 
 	border-radius: 10px;
@@ -251,7 +257,7 @@ ol, ul {
 /* about */
 .container-about {
 	background-color: #46F38B; 
-	height: 80vh;
+	height: 70vh;
 	width: 100%;
 	margin-top: 3rem; 
 	justify-content: center;
@@ -290,6 +296,10 @@ ol, ul {
 	margin-left: 5%;
 	margin-right: 5%;
 	height: 50%;
+}
+
+.about-body span{
+	font-size: 16px;
 }
 
 .about-logo i{
@@ -581,5 +591,50 @@ background-color: orangered;
 		padding: 20px;
 		text-align: center;
 	}
+	
 
+	.container-kategori{
+		margin: auto;
+		width: 90%;
+		/* height: 48vh;  */
+		background-color: #FBF9F9;
+		padding: 45px; 
+		border-radius: 10px;
+	}
+	.container-kategori h3{
+		font-size: 24px;
+		font-weight: bolder;
+	}
+	.container-kategori h5{ 
+		font-size: 16px;
+	
+	}
+	
+	.container-kategori .box-kategori{ 
+		margin: 15px auto;
+		display: flex;
+		width: 100%; 
+	}
+	.container-kategori .box { 
+		padding: 2px;  
+		width: 100%;
+		height: 100%;
+	}
+	.container-kategori .box-kategori i{
+		font-size: 16px;
+		padding:16px;
+	}
+	
+	.about-body span{
+		font-size: 12px;
+	}
+
+	.container-about {
+		height: 80vh;
+	}
+
+	.album .image {
+		width: calc(100%/2);
+		max-height: 250px;
+	}
 }
