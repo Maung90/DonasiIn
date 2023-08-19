@@ -20,7 +20,7 @@ body{
 	display: none;
 }
 .navbar-custom{
-	height: 8vh;
+	height: 9vh;
 	width: 100vw;
 	display: flex;
 	justify-content: space-between;
@@ -94,7 +94,8 @@ body{
 }
 .container-custom .row .col-1 summary{
 	display: flex;
-	align-items: center;  
+	align-items: center;
+	cursor: pointer;
 } 
 /* Card	*/
 
@@ -225,7 +226,7 @@ body{
 @media screen and (max-width:500px){
 	.navbar-mobile{
 		width: 100vw;
-		height: 7vh;
+		height: 8vh;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -343,11 +344,23 @@ body{
 
 /* tablet  */
 @media (min-width: 500px) and (max-width: 1030px){
+		.navbar-custom {
+		display: flex;
+		transform: translateX(0);
+	}
 	.container-custom .row .col-11 .row {
 		display: grid; 
 		grid-template-columns: repeat(2, minmax(210px, auto));
 	}
 	.container-custom .link-url{
 		margin-top: 10vh;
+	}
+}
+
+
+@media (min-width: 1040px){
+	.navbar-custom {
+		display: flex;
+		transform: translateX(0);
 	}
 }

@@ -40,6 +40,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
   /*Sidebar*/
+window.addEventListener('resize',()=>{
+
+  if (window.innerWidth > 500) {
+    document.querySelector('.navbar-custom').style.display = 'flex';
+    document.querySelector('.navbar-custom').style.transform = 'translateX(0)';
+  }else{
+    document.querySelector('.navbar-custom').style.display = 'none';
+  document.querySelector('.navbar-custom').style.transform = 'translateX(100%)';
+  }
+});
+
 
 document.getElementById('btn-open').addEventListener('click',()=>{
   clearTimeout();
